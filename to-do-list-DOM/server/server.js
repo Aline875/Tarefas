@@ -23,6 +23,7 @@ const tarefaSchema = new mongoose.Schema({
     nome: { type: String, required: true, minlength: 5, maxlength: 50 },
     descricao: { type: String, maxlength: 140 },
     finalizada: { type: Boolean, required: true, default: false },
+    dataCriacao: { type: Date, default: Date.now }, // Campo para armazenar a data de criação
     data_termino: Date,
     prioridade: { type: String, required: true, enum: ['Baixa', 'Média', 'Alta'], default: 'Baixa' },
     data_limite: { type: Date, required: true }
