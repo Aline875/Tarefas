@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Tarefa</title>
+    <link rel="stylesheet" href="../css/cadastro-tarefas.css">
+</head>
+<body>
+    <h1 class="titulo">Cadastro de Tarefa</h1>
+    <form id="taskForm" class="form">
+        <div class="form-group">
+            <label for="nome" class="label">Nome</label>
+            <input type="text" id="nome" name="nome" required class="input">
+            <div id="nomeError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="descricao" class="label">Descrição</label>
+            <textarea id="descricao" name="descricao" maxlength="140" class="textarea"></textarea>
+            <div id="descricaoError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="finalizada" class="label">Finalizada</label>
+            <select id="finalizada" name="finalizada" required class="select">
+                <option value="false">Não</option>
+                <option value="true">Sim</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="prioridade" class="label">Prioridade</label>
+            <select id="prioridade" name="prioridade" required class="select">
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="data_limite" class="label">Data Limite</label>
+            <input type="date" id="data_limite" name="data_limite" required class="input">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="button">Salvar</button>
+        </div>
+        <div id="message" class="success"></div>
+    </form>
+
+    <!-- Elemento para exibir os detalhes da tarefa -->
+    <div id="taskDetails" class="task-details"></div>
+
+    <script src="../js/tarefa-script.js"></script>
+</body>
+</html>
