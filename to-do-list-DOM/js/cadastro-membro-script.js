@@ -27,8 +27,7 @@ document.getElementById('formCadastroMembro').addEventListener('submit', async f
             throw new Error(errorData.error);
         }
 
-        const data = await response.json();
-        console.log('Membro cadastrado:', data);
+        window.location.href = '../html/login.html';
         alert('Membro cadastrado com sucesso!');
     } catch (error) {
         console.error('Erro ao cadastrar o membro:', error);
