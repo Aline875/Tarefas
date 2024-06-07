@@ -49,5 +49,5 @@ cron.schedule('0 0 * * *', async () => {
 });
 
 app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+    console.log('Server rodando na porta 3000');
 });
