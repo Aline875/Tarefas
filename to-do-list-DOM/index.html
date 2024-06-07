@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS para estilização -->
+    <link rel="stylesheet" href="./css/home.css"> <!-- Arquivo CSS para estilização -->
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo à sua Lista de Tarefas</h1>
-        <nav>
+    <header class="header">
+        <h1 class="header-title">Bem-vindo à sua Lista de Tarefas</h1>
+        <nav class="nav">
             <ul>
-                <li><a href="#">Tarefas</a></li>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Sair</a></li>
+                <li><a href="#" class="nav-link">Tarefas</a></li>
+                <li><a href="#" class="nav-link">Perfil</a></li>
+                <li><a href="#" class="nav-link">Sair</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="tarefas">
-            <h2>Suas Tarefas</h2>
+    <main class="main">
+        <section id="tarefas" class="section tarefas">
+            <h2 class="section-title">Suas Tarefas</h2>
             <!-- Aqui você pode listar as tarefas do usuário -->
             <ul>
                 <li>Tarefa 1</li>
@@ -28,15 +28,15 @@
                 <!-- Adicione mais tarefas conforme necessário -->
             </ul>
         </section>
-        <section id="perfil">
-            <h2>Seu Perfil</h2>
+        <section id="perfil" class="section perfil">
+            <h2 class="section-title">Seu Perfil</h2>
             <!-- Aqui você pode exibir informações do perfil do usuário -->
             <p>Nome: John Doe</p>
             <p>Email: john@example.com</p>
             <!-- Adicione mais informações conforme necessário -->
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
     </footer>
 </body>

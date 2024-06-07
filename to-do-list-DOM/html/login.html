@@ -7,24 +7,24 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="titulo">Login</h1>
-        <form id="formLogin">
-            <div class="campo">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <div class="login-container">
+        <h1 class="login-title">Login</h1>
+        <form id="formLogin" class="login-form">
+            <div class="login-field">
+                <label for="email" class="login-label">Email:</label>
+                <input type="email" id="email" name="email" class="login-input" required>
             </div>
-            <div class="campo">
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
+            <div class="login-field">
+                <label for="senha" class="login-label">Senha:</label>
+                <input type="password" id="senha" name="senha" class="login-input" required>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit" class="login-button">Login</button>
         </form>
-        <div id="mensagemErro" class="mensagem-erro"></div>
+        <div id="mensagemErro" class="login-error"></div>
     </div>
 
-    <div>
-        <a href="../index.html">Ir para a página inicial</a>
+    <div class="login-link-container">
+        <a href="../index.html" class="login-link">Ir para a página inicial</a>
     </div>
     
     <script src="../js/login.js"></script>
