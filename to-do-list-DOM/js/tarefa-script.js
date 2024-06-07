@@ -57,7 +57,7 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
                     <p><strong>Finalizada:</strong> ${data.finalizada ? 'Sim' : 'Não'}</p>
                     <p><strong>Prioridade:</strong> ${data.prioridade}</p>
                     <p><strong>Data Limite:</strong> ${data.data_limite}</p>
-                    
+                    <p><strong>Data de criação:</strong> ${data.dataCriacao}</p>
                 `;
             }
         })
