@@ -18,18 +18,18 @@ mongoose.connect('mongodb://127.0.0.1:27017/gerenciamento-tarefas', {
     console.error('Erro ao conectar ao MongoDB', error);
 });
 
-// Definir esquema de tarefa
+
 const tarefaSchema = new mongoose.Schema({
     nome: { type: String, required: true, minlength: 5, maxlength: 50 },
     descricao: { type: String, maxlength: 140 },
     finalizada: { type: Boolean, required: true, default: false },
-    dataCriacao: { type: Date, default: Date.now }, // Campo para armazenar a data de criação
+    dataCriacao: { type: Date, default: Date.now },
     data_termino: Date,
     prioridade: { type: String, required: true, enum: ['Baixa', 'Média', 'Alta'], default: 'Baixa' },
     data_limite: { type: Date, required: true }
 });
 
-// Definir esquema de membro
+
 const membroSchema = new mongoose.Schema({
     nome: { type: String, required: true, minlength: 5 },
     email: { type: String, required: true, unique: true },
@@ -39,7 +39,7 @@ const membroSchema = new mongoose.Schema({
 const Tarefa = mongoose.model('Tarefa', tarefaSchema);
 const Membro = mongoose.model('Membro', membroSchema);
 
-// Endpoint para cadastrar tarefa
+
 app.post('/api/tarefas', async (req, res) => {
     try {
         const { nome, descricao, finalizada, prioridade, data_limite } = req.body;
@@ -52,7 +52,7 @@ app.post('/api/tarefas', async (req, res) => {
     }
 });
 
-// Endpoint para cadastrar membro
+
 app.post('/api/membros', async (req, res) => {
     try {
         const { nome, email, senha } = req.body;
@@ -65,7 +65,7 @@ app.post('/api/membros', async (req, res) => {
     }
 });
 
-// Endpoint para login
+
 app.post('/api/login', async (req, res) => {
     try {
         const { email, senha } = req.body;
@@ -85,7 +85,7 @@ app.post('/api/login', async (req, res) => {
     }
 });
 
-// Agendar uma tarefa cron para verificar e atualizar o status das tarefas diariamente à meia-noite
+
 cron.schedule('0 0 * * *', async () => {
     const now = new Date();
     try {

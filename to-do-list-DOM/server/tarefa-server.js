@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// Conectar ao MongoDB
+
 mongoose.connect('mongodb://127.0.0.1:27017/gerenciamento-tarefas');
 
 const tarefaSchema = new mongoose.Schema({
@@ -34,7 +34,7 @@ app.post('/api/tarefas', async (req, res) => {
     }
 });
 
-// Agendar uma tarefa cron para verificar e atualizar o status das tarefas diariamente à meia-noite
+
 cron.schedule('0 0 * * *', async () => {
     const now = new Date();
     try {

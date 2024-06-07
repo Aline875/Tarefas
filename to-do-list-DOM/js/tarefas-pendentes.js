@@ -1,6 +1,6 @@
 // checkTasks.js
 const mongoose = require('mongoose');
-const Tarefa = require('./tarefaModel');  // Assumindo que você separou o modelo em um arquivo tarefaModel.js
+const Tarefa = require('./tarefaModel'); 
 
 mongoose.connect('mongodb://127.0.0.1:27017/gerenciamento-tarefas', {
     useNewUrlParser: true,

@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// Conectar ao MongoDB
+
 mongoose.connect('mongodb://127.0.0.1:27017/gerenciamento-tarefas', {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -21,7 +21,7 @@ const membroSchema = new mongoose.Schema({
 
 const Membro = mongoose.model('Membro', membroSchema);
 
-// Endpoint para login
+
 app.post('/api/login', async (req, res) => {
     try {
         const { email, senha } = req.body;

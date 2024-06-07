@@ -1,88 +1,65 @@
-/* Estilos gerais */
 .home-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e3f2fd; /* Azul claro */
+    background-color: #f2f2f2;
 }
 
+/* Estilos para o cabeçalho */
 .home-header {
-    background-color: #1565c0; /* Azul escuro */
+    background-color: #1565c0; /* Azul */
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
 .home-header-title {
     margin: 0;
+    font-size: 24px;
 }
 
+/* Estilos para a navegação */
 .home-nav {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .home-nav-list {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 .home-nav-list li {
-    display: inline;
-    margin-right: 15px;
+    display: inline; /* Fazer os itens da lista aparecerem na mesma linha */
+    margin-right: 20px; /* Espaçamento entre os itens */
 }
 
 .home-nav-link {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave */
 }
 
 .home-nav-link:hover {
-    text-decoration: underline;
+    background-color: #0d47a1; /* Azul mais escuro */
 }
 
+
+/* Estilos para o conteúdo principal */
 .home-main {
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Espaçamento entre as seções */
-}
-
-.home-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-basis: 48%;
 }
 
 .home-section-title {
-    margin-top: 0;
-    color: #1565c0; /* Azul escuro */
+    color: #333; /* Cor escura para títulos */
 }
 
-.home-tarefas-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.home-tarefas-item {
-    background-color: #e3f2fd; /* Azul claro */
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 3px;
-}
-
-.home-perfil-info {
-    margin: 5px 0;
-    color: #1565c0; /* Azul escuro */
-}
-
-.home-footer {
-    background-color: #1565c0; /* Azul escuro */
+/* Estilos para o rodapé */
+.footer {
+    background-color: #1565c0; /* Azul */
     color: #fff;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 10px 0;
 }
-
