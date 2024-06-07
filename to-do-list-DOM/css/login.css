@@ -1,4 +1,5 @@
 /* Estilos gerais */
+<<<<<<< HEAD
 .login-body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -37,10 +38,46 @@
     display: block;
     margin-bottom: 5px;
     color: #1565c0; /* Azul escuro */
+=======
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Estilos para a página de login */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.login-field {
+    margin-bottom: 20px;
+}
+
+.login-label {
+    display: block;
+    margin-bottom: 5px;
+>>>>>>> f594a6431e7bb8ff83428bd564f4b1e0ef74139b
 }
 
 .login-input {
     width: 100%;
+<<<<<<< HEAD
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -57,24 +94,54 @@
     color: #fff;
     border: none;
     border-radius: 4px;
+=======
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+>>>>>>> f594a6431e7bb8ff83428bd564f4b1e0ef74139b
     cursor: pointer;
 }
 
 .login-button:hover {
+<<<<<<< HEAD
     background-color: #0d47a1; /* Azul mais escuro */
 }
 
 .login-error {
+=======
+    background-color: #555;
+}
+
+.login-error {
+    color: red;
+>>>>>>> f594a6431e7bb8ff83428bd564f4b1e0ef74139b
     margin-top: 10px;
     color: red;
 }
 
 .login-link-container {
     margin-top: 20px;
+<<<<<<< HEAD
 }
 
 .login-link {
     color: #1565c0; /* Azul escuro */
+=======
+    text-align: center;
+}
+
+.login-link {
+    color: #333;
+>>>>>>> f594a6431e7bb8ff83428bd564f4b1e0ef74139b
     text-decoration: none;
 }
 
