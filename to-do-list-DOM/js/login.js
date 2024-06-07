@@ -31,4 +31,5 @@ document.getElementById('formLogin').addEventListener('submit', async function(e
     } catch (error) {
         document.getElementById('mensagemErro').textContent = error.message;
     }
+    
 });
