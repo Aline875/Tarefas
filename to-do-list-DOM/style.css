@@ -1,0 +1,87 @@
+/* Estilos gerais */
+.home-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd; /* Azul claro */
+}
+
+.home-header {
+    background-color: #1565c0; /* Azul escuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-header-title {
+    margin: 0;
+}
+
+.home-nav {
+    margin-top: 10px;
+}
+
+.home-nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.home-nav-list li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.home-nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-nav-link:hover {
+    text-decoration: underline;
+}
+
+.home-main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre as seções */
+}
+
+.home-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 48%;
+}
+
+.home-section-title {
+    margin-top: 0;
+    color: #1565c0; /* Azul escuro */
+}
+
+.home-tarefas-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.home-tarefas-item {
+    background-color: #e3f2fd; /* Azul claro */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.home-perfil-info {
+    margin: 5px 0;
+    color: #1565c0; /* Azul escuro */
+}
+
+.home-footer {
+    background-color: #1565c0; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

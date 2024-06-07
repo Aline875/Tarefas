@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS para estilização -->
+    <link rel="stylesheet" href="style.css"> <!-- Arquivo CSS para estilização -->
 </head>
-<body>
-    <header>
-        <h1>Bem-vindo à sua Lista de Tarefas</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Tarefas</a></li>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Sair</a></li>
+<body class="home-body">
+    <header class="home-header">
+        <h1 class="home-header-title">Bem-vindo à sua Lista de Tarefas</h1>
+        <nav class="home-nav">
+            <ul class="home-nav-list">
+                <li><a href="#" class="home-nav-link">Tarefas</a></li>
+                <li><a href="#" class="home-nav-link">Perfil</a></li>
+                <li><a href="#" class="home-nav-link">Sair</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="tarefas">
-            <h2>Suas Tarefas</h2>
+    <main class="home-main">
+        <section id="tarefas" class="home-section home-tarefas">
+            <h2 class="home-section-title">Suas Tarefas</h2>
             <!-- Aqui você pode listar as tarefas do usuário -->
-            <ul>
-                <li>Tarefa 1</li>
-                <li>Tarefa 2</li>
-                <li>Tarefa 3</li>
+            <ul class="home-tarefas-list">
+                <li class="home-tarefas-item">Tarefa 1</li>
+                <li class="home-tarefas-item">Tarefa 2</li>
+                <li class="home-tarefas-item">Tarefa 3</li>
                 <!-- Adicione mais tarefas conforme necessário -->
             </ul>
         </section>
-        <section id="perfil">
-            <h2>Seu Perfil</h2>
+        <section id="perfil" class="home-section home-perfil">
+            <h2 class="home-section-title">Seu Perfil</h2>
             <!-- Aqui você pode exibir informações do perfil do usuário -->
-            <p>Nome: John Doe</p>
-            <p>Email: john@example.com</p>
+            <p class="home-perfil-info">Nome: John Doe</p>
+            <p class="home-perfil-info">Email: john@example.com</p>
             <!-- Adicione mais informações conforme necessário -->
         </section>
     </main>
-    <footer>
+    <footer class="home-footer">
         <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
     </footer>
 </body>
