@@ -48,6 +48,17 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
                 document.getElementById('message').innerText = 'Tarefa salva com sucesso!';
                 document.getElementById('message').className = 'success';
                 document.getElementById('taskForm').reset();
+
+                // Exibir os dados da tarefa na tela
+                document.getElementById('taskDetails').innerHTML = `
+                    <h2>Dados da Tarefa</h2>
+                    <p><strong>Nome:</strong> ${data.nome}</p>
+                    <p><strong>Descrição:</strong> ${data.descricao}</p>
+                    <p><strong>Finalizada:</strong> ${data.finalizada ? 'Sim' : 'Não'}</p>
+                    <p><strong>Prioridade:</strong> ${data.prioridade}</p>
+                    <p><strong>Data Limite:</strong> ${data.data_limite}</p>
+                    
+                `;
             }
         })
         .catch((error) => {
