@@ -21,7 +21,13 @@ document.getElementById('formLogin').addEventListener('submit', async function(e
         alert(data.message);
 
         // Redirecionar para a página inicial ou outra página desejada
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
+
+        // Ou você pode adicionar o link diretamente no DOM após o login bem-sucedido
+        const linkPaginaInicial = document.createElement('a');
+        linkPaginaInicial.href = '../index.html';
+        linkPaginaInicial.textContent = 'Ir para a página inicial';
+        document.body.appendChild(linkPaginaInicial);
     } catch (error) {
         document.getElementById('mensagemErro').textContent = error.message;
     }
